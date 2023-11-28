@@ -1,3 +1,3 @@
-const users = [{ id: 1, name: 'John' }, { id: 2, name: 'Jane'}]
+const users = [{ email: "rajesh@108", password: 'John' }]
 
 export default users;
