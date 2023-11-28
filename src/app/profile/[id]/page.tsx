@@ -4,7 +4,6 @@ const useClient = ({params}:{params: {id: string}}) => {
       <h1>Client {params.id}</h1>
     </div>
   );
-
 };
 
 export default useClient;

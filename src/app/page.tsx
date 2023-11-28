@@ -1,15 +1,11 @@
-"use client"
+"use client";
 
-import Image from 'next/image'
-import { useRouter } from 'next/navigation'
+const Home = () => {
+    return (
+        <main>
+            <h1>Home</h1>
+        </main>
+    );
+};
 
-export default function Home() {
-  const router = useRouter()
-  return (
-    <main>
-      <button onClick={() => {
-        router.push('/profile/1')
-      }}>click on me</button>
-    </main>
-  )
-}
+export default Home;
