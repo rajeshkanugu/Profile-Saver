@@ -5,6 +5,7 @@ export default function RootLayout({
   }) {
     return (
       <main>
+        Profile Layout
         {children}
       </main>
     )
