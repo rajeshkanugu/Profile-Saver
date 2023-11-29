@@ -1,8 +1,8 @@
 const Home = async () => {
     return (
-        <main>
-            <h1>You are in Profile</h1>
-        </main>
+        <section>
+            <h1>Home</h1>
+        </section>
     );
 };
 
