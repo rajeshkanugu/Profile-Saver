@@ -9,7 +9,8 @@ const imageStyle = {
 const Home = async () => {
     const session = await getServerSession(options);    
     return (
-        <main className="w-screen h-screen items-center justify-center flex text-lg">
+        <main className="w-screen h-screen items-center justify-center flex text-lg flex-col gap-10 font-bold">
+            <h1 className="text-2xl">My Profile</h1>
             <div className="flex gap-4 flex-col justify-center items-center">
                 {session?.user?.image && <Image src={session?.user?.image as string} alt="user image" width={180} height={180} style={imageStyle} />}
                 {session?.user?.name && <span className="font-bold mt-3">{session?.user?.name}</span>}
