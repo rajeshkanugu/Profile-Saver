@@ -5,9 +5,9 @@ import Image from "next/image";
 const Home = async () => {
     const session = await getServerSession(options);    
     return (
-        <main>
+        <main className="w-screen px-40 py-10">
             <nav>
-                <div className="flex justify-between items-center py-6 px-10">
+                <div className="flex justify-between items-center py-6">
                     <div className="flex gap-4 items-center">
                         <div className="flex gap-4 items-center">
                             <a href="/">
@@ -23,6 +23,22 @@ const Home = async () => {
                     </div>
                 </div>
             </nav>
+            <section className="flex mt-20 gap-20 justify-between">
+                <div className="flex flex-col gap-10">
+                    <span className="text-6xl leading-snug font-bold">
+                        Turn your Data into action with EasyMetrics
+                    </span>
+                    <span className="italic text-xl">
+                        EasyMetrics offers the key to maximizing your potential by transforming raw data into informed decisions.
+                    </span>
+                    <div className="w-50 font-bold text-xl">
+                        <button className="w-50 p-10 bg-black text-white py-5 rounded-xl">Get Started</button>
+                    </div>
+                </div>
+                <div className="">
+                    <Image src="/portfolio.png" alt="hero" width={500} height={500} />
+                </div>
+            </section>
         </main>
     );
 };
