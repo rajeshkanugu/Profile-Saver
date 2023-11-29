@@ -26,13 +26,13 @@ const Home = async () => {
             <section className="flex mt-20 gap-20 justify-between">
                 <div className="flex flex-col gap-10">
                     <span className="text-6xl leading-snug font-bold">
-                        Turn your Data into action with EasyMetrics
+                        A platform to store your loved ones details
                     </span>
                     <span className="italic text-xl">
-                        EasyMetrics offers the key to maximizing your potential by transforming raw data into informed decisions.
+                        A platform to store your loved ones details in a user friendly way.
                     </span>
                     <div className="w-50 font-bold text-xl">
-                        <button className="w-50 p-10 bg-black text-white py-5 rounded-xl">Get Started</button>
+                        <a href="/profile"><button className="w-50 p-10 bg-black text-white py-5 rounded-xl">Get Started</button></a>
                     </div>
                 </div>
                 <div className="">
